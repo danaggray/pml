@@ -195,7 +195,7 @@ confusionMatrix(rfPrediction, testSubData$classe)</code></pre>
 ## Detection Rate         0.2845   0.1933   0.1741   0.1637   0.1837
 ## Detection Prevalence   0.2847   0.1933   0.1743   0.1639   0.1837
 ## Balanced Accuracy      0.9999   0.9995   0.9993   0.9993   1.0000</code></pre>
-<p>We can see that the Random Forest model works better than the Decision Tree model as a predictor, .998 vs .820. The expected OOB (1-accuracy) error is .2%. Confidence Interval is 0.9968 - 0.9993 The RF model is well suited for prediction against the test set which is a select group of 6 relatively healthy young individuals. We these conditions we can expect an accuracy of 99.8%. Naturally against a more representative set of the population the model would probably not perform at that level.</p>
+<p>We can see that the Random Forest model works better than the Decision Tree model as a predictor, .999 vs .820. The expected OOB (1-accuracy) error is less than .2%. Confidence Interval is 0.9968 - 0.9993 The RF model is well suited for prediction against the test set which is a select group of 6 relatively healthy young individuals. We these conditions we can expect an accuracy of 99.8%. Naturally against a more representative set of the population the model would probably not perform at that level.</p>
 <p>Now let us predict against our testing set</p>
 <pre class="r"><code># run data cleaning processes against the original test set
 
